@@ -21,11 +21,11 @@ public class Calculos9_3 {
     public void calcular() {
         do {
             System.out.println("Altura?");
-            altura = sc.nextInt();
+            altura = sc.nextFloat();
         } while (altura < 0);
         do {
             System.out.println("Base?");
-            base = sc.nextInt();
+            base = sc.nextFloat();
         } while (base < 0);
 
         area = altura * base;
