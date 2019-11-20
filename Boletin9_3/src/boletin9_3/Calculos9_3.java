@@ -16,25 +16,20 @@ public class Calculos9_3 {
     private float base;
     private float altura;
     private float valor;
-    private float area;
     Scanner sc = new Scanner(System.in);
 
     public float validar() {
         do {
             valor = sc.nextFloat();
-        } while (valor < 0);
+        } while (valor <= 0);
         return valor;
     }
 
     public void calcular() {
-
         System.out.println("Altura?");
         altura = validar();
-
         System.out.println("Base?");
         base = validar();
-
-        area = altura * base;
-        System.out.println(area);
+        System.out.println(base * altura);
     }
 }
