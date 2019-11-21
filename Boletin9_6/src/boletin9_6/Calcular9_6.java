@@ -21,9 +21,15 @@ public class Calcular9_6 {
     float aux;
     int aux2;
 
+    public void validar() {
+        do {
+            System.out.println("Cal é o soldo de cada un dos empleados?");
+            soldo = sc.nextFloat();
+        } while (soldo < 0);
+    }
+
     public void calculo() {
-        System.out.println("Cal é o soldo de cada un dos empleados?");
-        soldo = sc.nextFloat();
+        validar();
         while (soldo != 0) {
             if (soldo < 1000) {
                 aux++;
